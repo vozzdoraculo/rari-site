@@ -503,7 +503,7 @@ main {
 .hero-title {
     max-width: 3.5ch;
     margin-bottom: 8px;
-    font-size: clamp(4.2rem, 14vw, 5rem) !important;
+    font-size: 3.4rem !important;
     line-height: .78;
     text-transform: uppercase;
     text-shadow: 0 10px 29px rgba(0, 0, 0, .52);
