@@ -498,7 +498,6 @@ main {
     width: 100%;
     max-width: 560px;
     padding: 40px 24px 44px;
-    margin-top: -10px;
 }
 
 .hero-title {
@@ -530,6 +529,12 @@ main {
   font-weight:500;
   letter-spacing:.23em;
   text-transform:uppercase;
+}
+
+.hero-title,
+.hero-role {
+    position: relative;
+    top: -40px;
 }
 
 .hero-message{
