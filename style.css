@@ -1504,11 +1504,8 @@ main {
 ========================================================= */
 
 .section-reveal {
-  opacity: 0;
-  transform: translateY(28px);
-  transition:
-    opacity 0.75s ease,
-    transform 0.75s ease;
+  opacity: 1;
+  transform: none;
 }
 
 .section-reveal.is-visible {
