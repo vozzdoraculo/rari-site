@@ -500,19 +500,13 @@ main {
     padding: 40px 24px 44px;
 }
 
-.hero-title,
-.hero-role {
-    position: relative;
-    top: -80px;
-}
-
-.hero-role {
-    margin-bottom: 14px;
-    color: var(--gold-light);
-    font-size: .68rem;
-    font-weight: 500;
-    letter-spacing: .20em;
+.hero-title {
+    max-width: 4.5ch;
+    margin-bottom: 10px;
+    font-size: clamp(3.2rem, 14vw, 5.8rem);
+    line-height: .78;
     text-transform: uppercase;
+    text-shadow: 0 10px 32px rgba(0, 0, 0, .52);
 }
 
 
