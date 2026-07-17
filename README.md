@@ -36,7 +36,7 @@
       --borda: rgba(216, 168, 79, 0.38);
       --vidro: rgba(5, 25, 40, 0.82);
     }
-.
+
     * {
       box-sizing: border-box;
     }
