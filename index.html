@@ -293,33 +293,31 @@
       justify-content: center;
     }
 
-    .rari {
-      position: relative;
-      z-index: 3;
-      width: min(420px, 82%);
-      height: 560px;
-      display: flex;
-      align-items: end;
-      justify-content: center;
-      overflow: hidden;
-      border: 1px solid rgba(216, 168, 79, 0.22);
-      border-radius: 48% 48% 24% 24% / 25% 25% 10% 10%;
-      background:
-        radial-gradient(
-          circle at 50% 30%,
-          rgba(70, 150, 200, 0.35),
-          transparent 27%
-        ),
-        linear-gradient(
-          180deg,
-          #163f5d,
-          #09243a 48%,
-          #03111d
-        );
-      box-shadow:
-        0 30px 70px rgba(0, 0, 0, 0.42),
-        0 0 70px rgba(40, 125, 180, 0.20);
-    }
+ .rari {
+  position: relative;
+  z-index: 3;
+  width: min(420px, 82%);
+  height: 560px;
+  overflow: hidden;
+  border: 1px solid rgba(216, 168, 79, 0.22);
+  border-radius: 48% 48% 24% 24% / 25% 25% 10% 10%;
+
+  background-image:
+    linear-gradient(
+      180deg,
+      transparent 60%,
+      rgba(2, 11, 19, 0.75) 100%
+    ),
+    url("NOME-EXATO-DA-SUA-FOTO");
+
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  box-shadow:
+    0 30px 70px rgba(0, 0, 0, 0.42),
+    0 0 70px rgba(40, 125, 180, 0.20);
+}
 
     .rari::before {
       content: "RARI";
