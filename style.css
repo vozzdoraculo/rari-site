@@ -494,11 +494,13 @@ main {
 }
 
 .hero-content {
-  position: relative;
-  z-index: 3;
-  width: 100%;
-  max-width: 560px;
-  padding: 30px 24px 44px;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    max-width: 560px;
+    padding: 70px 24px 44px;
+    transform: translateY(-30px);
+}
 }
 
 .hero-title {
