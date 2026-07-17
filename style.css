@@ -1856,3 +1856,13 @@ input:focus-visible {
     padding-left: 20px;
   }
 }
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 3rem !important;
+        line-height: 0.82 !important;
+    }
+
+    .hero-role {
+        font-size: 0.65rem !important;
+    }
+}
