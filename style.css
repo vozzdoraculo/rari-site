@@ -1858,7 +1858,7 @@ input:focus-visible {
 }
 @media (max-width: 768px) {
     .hero-title {
-        font-size: 3rem !important;
+        font-size: 4.0rem !important;
         line-height: 0.82 !important;
     }
 
