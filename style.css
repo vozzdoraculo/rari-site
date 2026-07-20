@@ -447,7 +447,7 @@ top: 6px;
 .hero-section {
   position: relative;
   width: min(1180px, 100%);
-  min-height: calc(100svh - var(--header-height));
+  min-height: auto;
   display: flex;
   align-items: center;
   margin: 0 auto;
