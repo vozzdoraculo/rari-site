@@ -360,6 +360,8 @@ main {
 .brand {
   display: block;
   width: 245px;
+   position: relative;
+top: 6px;
   max-width: 72vw;
 }
 
