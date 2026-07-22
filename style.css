@@ -2243,3 +2243,77 @@ input:focus-visible {
     margin-top: 22px !important;
   }
 }
+
+/* =========================================================
+   CORREÇÃO DEFINITIVA DA ABERTURA
+========================================================= */
+
+@media (max-width: 768px) {
+  body {
+    background: #062a40 !important;
+  }
+
+  .hero-section.hero-cosmic {
+    min-height: auto !important;
+    overflow: hidden !important;
+    background:
+      radial-gradient(
+        circle at 50% 35%,
+        rgba(24, 111, 160, 0.35),
+        transparent 45%
+      ),
+      linear-gradient(
+        180deg,
+        #07334d 0%,
+        #062d45 55%,
+        #062a40 100%
+      ) !important;
+  }
+
+  /* Remove o escurecimento que criava o remendo */
+
+  .hero-section.hero-cosmic::after {
+    background: transparent !important;
+  }
+
+  .hero-cosmic-content {
+    width: 100% !important;
+    padding: 65px 18px 75px !important;
+  }
+
+  .hero-cosmic-title {
+    font-size: clamp(3.7rem, 17vw, 5.2rem) !important;
+    line-height: 0.86 !important;
+  }
+
+  .hero-cosmic-phrase {
+    margin-top: 40px !important;
+  }
+
+  /* Placas voltam ao fluxo normal */
+
+  .hero-cosmic-actions {
+    position: static !important;
+    top: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    max-width: 390px !important;
+    margin: 70px auto 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+  }
+
+  .hero-cosmic-actions .button {
+    width: 100% !important;
+  }
+
+  /* Continuação no mesmo azul */
+
+  .aurora-introduction {
+    margin-top: 0 !important;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
