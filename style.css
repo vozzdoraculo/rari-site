@@ -2420,3 +2420,17 @@ main,
   }
 }
 
+/* FAIXA AZUL DO CABEÇALHO */
+
+.site-header {
+  background:
+    linear-gradient(
+      180deg,
+      #06364f 0%,
+      #052c42 100%
+    ) !important;
+  border-bottom: 1px solid rgba(216, 168, 79, 0.18) !important;
+  box-shadow:
+    0 10px 30px rgba(2, 17, 27, 0.18) !important;
+  backdrop-filter: blur(16px);
+}
