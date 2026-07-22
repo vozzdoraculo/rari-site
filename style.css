@@ -1884,3 +1884,274 @@ input:focus-visible {
 }
    
 }
+
+/* =========================================================
+   NOVA ABERTURA — RARI FAVARO
+========================================================= */
+
+.hero-section.hero-cosmic {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  min-height: calc(100svh - var(--header-height));
+  display: grid;
+  place-items: center;
+  isolation: isolate;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(216, 168, 79, 0.22);
+  background:
+    radial-gradient(
+      circle at 50% 44%,
+      rgba(20, 101, 148, 0.42),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 82% 22%,
+      rgba(27, 112, 161, 0.24),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 15% 75%,
+      rgba(196, 139, 57, 0.09),
+      transparent 26%
+    ),
+    linear-gradient(
+      145deg,
+      #020b13 0%,
+      #061b2b 45%,
+      #03111d 72%,
+      #020911 100%
+    );
+}
+
+/* Neblina luminosa em movimento */
+
+.hero-cosmic-light {
+  position: absolute;
+  z-index: -3;
+  width: 70vw;
+  height: 70vw;
+  max-width: 850px;
+  max-height: 850px;
+  border-radius: 50%;
+  background: rgba(25, 118, 173, 0.18);
+  filter: blur(100px);
+  animation: heroCosmicLight 12s ease-in-out infinite alternate;
+}
+
+/* Pequenas estrelas no fundo */
+
+.hero-section.hero-cosmic::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  opacity: 0.42;
+  background-image:
+    radial-gradient(
+      circle,
+      rgba(244, 211, 133, 0.7) 0 1px,
+      transparent 1.4px
+    );
+  background-size: 68px 68px;
+  mask-image:
+    radial-gradient(
+      circle at center,
+      #000 0%,
+      rgba(0, 0, 0, 0.75) 50%,
+      transparent 100%
+    );
+}
+
+/* Profundidade escura nas bordas */
+
+.hero-section.hero-cosmic::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(2, 9, 17, 0.18),
+      transparent 30%,
+      transparent 65%,
+      rgba(2, 9, 17, 0.62)
+    );
+}
+
+/* Constelação atravessando a tela */
+
+.hero-constellation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  width: min(1000px, 125vw);
+  height: auto;
+  opacity: 0.38;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 9px rgba(244, 211, 133, 0.4));
+  animation: constellationPass 18s ease-in-out infinite alternate;
+}
+
+.constellation-lines {
+  fill: none;
+  stroke: rgba(244, 211, 133, 0.62);
+  stroke-width: 1;
+}
+
+.constellation-stars {
+  fill: #f4d385;
+}
+
+.constellation-stars circle {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: constellationPulse 3.4s ease-in-out infinite;
+}
+
+.constellation-stars circle:nth-child(2n) {
+  animation-delay: 1.1s;
+}
+
+.constellation-stars circle:nth-child(3n) {
+  animation-delay: 2s;
+}
+
+/* Nome e profissão */
+
+.hero-cosmic-content {
+  position: relative;
+  z-index: 2;
+  width: min(920px, calc(100% - 36px));
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.hero-cosmic-symbol {
+  margin-bottom: 18px;
+  color: var(--gold-light);
+  font-size: 1.1rem;
+  text-shadow: 0 0 20px rgba(244, 211, 133, 0.75);
+}
+
+.hero-cosmic-title {
+  max-width: none;
+  margin: 0;
+  color: var(--cream);
+  font-size: clamp(5.2rem, 14vw, 11rem) !important;
+  font-weight: 400;
+  letter-spacing: -0.055em;
+  line-height: 0.69 !important;
+  text-transform: none;
+  text-shadow: 0 16px 55px rgba(0, 0, 0, 0.6);
+}
+
+.hero-cosmic-title span,
+.hero-cosmic-title strong {
+  display: block;
+}
+
+.hero-cosmic-title strong {
+  color: var(--gold-light);
+  font-weight: 500;
+  font-style: italic;
+}
+
+.hero-cosmic-role {
+  position: static;
+  top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 40px 0 0;
+  color: var(--white-soft);
+  font-size: clamp(0.62rem, 1.5vw, 0.82rem) !important;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.hero-cosmic-role span {
+  width: 30px;
+  height: 1px;
+  background: var(--gold);
+  box-shadow: 0 0 10px rgba(216, 168, 79, 0.6);
+}
+
+/* Movimentos */
+
+@keyframes constellationPass {
+  0% {
+    transform: translate(-58%, -52%) rotate(-3deg) scale(0.97);
+    opacity: 0.24;
+  }
+
+  100% {
+    transform: translate(-42%, -47%) rotate(3deg) scale(1.04);
+    opacity: 0.52;
+  }
+}
+
+@keyframes constellationPulse {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(0.75);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.45);
+  }
+}
+
+@keyframes heroCosmicLight {
+  from {
+    transform: translate(-12%, -7%) scale(0.9);
+    opacity: 0.65;
+  }
+
+  to {
+    transform: translate(12%, 7%) scale(1.12);
+    opacity: 1;
+  }
+}
+
+/* Ajuste para celular */
+
+@media (max-width: 768px) {
+  .hero-section.hero-cosmic {
+    min-height: calc(100svh - var(--header-height));
+  }
+
+  .hero-constellation {
+    width: 185vw;
+    opacity: 0.32;
+  }
+
+  .hero-cosmic-content {
+    padding: 70px 12px 110px;
+  }
+
+  .hero-cosmic-title {
+    font-size: clamp(5rem, 25vw, 7.3rem) !important;
+    line-height: 0.72 !important;
+  }
+
+  .hero-cosmic-role {
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    margin-top: 35px;
+    font-size: 0.59rem !important;
+    letter-spacing: 0.2em;
+  }
+
+  .hero-cosmic-role span {
+    width: 20px;
+  }
+}
