@@ -2225,21 +2225,21 @@ input:focus-visible {
   }
 }
 
-/* PLAQUINHAS SOBRE A TRANSIÇÃO PRETO/AZUL */
+/* POSIÇÃO CORRETA DAS PLAQUINHAS */
 
 @media (max-width: 768px) {
   .hero-section.hero-cosmic {
-    overflow: visible !important;
+    overflow: hidden !important;
   }
 
   .hero-cosmic-actions {
     position: relative !important;
     z-index: 20 !important;
-    top: 310px !important;
+    top: 190px !important;
     margin-top: 0 !important;
   }
 
   .aurora-introduction {
-    margin-top: 145px !important;
+    margin-top: 22px !important;
   }
 }
