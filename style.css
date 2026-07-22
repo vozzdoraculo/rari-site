@@ -2157,3 +2157,70 @@ input:focus-visible {
     width: 20px;
   }
 }
+
+/* AJUSTE FINAL DO HERO */
+
+.hero-cosmic-title {
+  font-family: "Cinzel", serif !important;
+  font-size: clamp(4.2rem, 13vw, 9rem) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.015em !important;
+  line-height: 0.82 !important;
+  text-transform: uppercase !important;
+}
+
+.hero-cosmic-title span,
+.hero-cosmic-title strong {
+  color: var(--cream);
+  font-family: "Cinzel", serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+.hero-cosmic-title strong {
+  color: var(--gold-light);
+}
+
+.hero-cosmic-role {
+  margin-top: 28px;
+  margin-bottom: 34px;
+}
+
+.hero-cosmic-actions {
+  width: min(620px, 100%);
+  display: grid;
+  gap: 12px;
+  margin: 0 auto;
+}
+
+.hero-cosmic-actions .button {
+  min-height: 62px;
+}
+
+@media (min-width: 700px) {
+  .hero-cosmic-actions {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-cosmic-content {
+    padding-top: 60px;
+    padding-bottom: 105px;
+  }
+
+  .hero-cosmic-title {
+    font-size: clamp(3.7rem, 18vw, 5.4rem) !important;
+    line-height: 0.84 !important;
+  }
+
+  .hero-cosmic-role {
+    margin-top: 25px;
+    margin-bottom: 32px;
+  }
+
+  .hero-cosmic-actions {
+    width: 100%;
+    max-width: 390px;
+  }
+}
