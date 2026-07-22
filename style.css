@@ -2224,3 +2224,22 @@ input:focus-visible {
     max-width: 390px;
   }
 }
+
+/* PLAQUINHAS SOBRE A TRANSIÇÃO PRETO/AZUL */
+
+@media (max-width: 768px) {
+  .hero-section.hero-cosmic {
+    overflow: visible !important;
+  }
+
+  .hero-cosmic-actions {
+    position: relative !important;
+    z-index: 20 !important;
+    top: 310px !important;
+    margin-top: 0 !important;
+  }
+
+  .aurora-introduction {
+    margin-top: 145px !important;
+  }
+}
