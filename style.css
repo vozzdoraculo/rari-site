@@ -2317,3 +2317,16 @@ input:focus-visible {
   }
 }
 
+/* REMOVE A LINHA ENTRE A ABERTURA E A AURORA */
+
+.hero-section.hero-cosmic {
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 768px) {
+  .hero-section.hero-cosmic {
+    border-bottom: 0 !important;
+  }
+}
+
