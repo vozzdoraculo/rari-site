@@ -2434,3 +2434,13 @@ main,
     0 10px 30px rgba(2, 17, 27, 0.18) !important;
   backdrop-filter: blur(16px);
 }
+
+/* TAMANHO DO SÍMBOLO NO CELULAR */
+
+@media (max-width: 768px) {
+  .brand,
+  .brand-image {
+    width: 62px !important;
+    height: 62px !important;
+  }
+}
