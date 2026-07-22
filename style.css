@@ -2356,3 +2356,67 @@ input:focus-visible {
   }
 }
 
+/* =========================================================
+   AZUL ÚNICO EM TODO O SITE
+========================================================= */
+
+:root {
+  --site-blue: #073b56;
+}
+
+html,
+body,
+main,
+.site-background {
+  background: var(--site-blue) !important;
+}
+
+.site-background .background-light {
+  display: none !important;
+}
+
+/* Cabeçalho conectado ao corpo */
+
+.site-header {
+  border-bottom: none !important;
+  background: var(--site-blue) !important;
+  box-shadow: none !important;
+}
+
+/* Abertura no mesmo azul */
+
+.hero-section.hero-cosmic {
+  border: none !important;
+  background: var(--site-blue) !important;
+  box-shadow: none !important;
+}
+
+.hero-section.hero-cosmic::after {
+  display: none !important;
+}
+
+.hero-cosmic-light {
+  display: none !important;
+}
+
+/* Espaço que envolve a Aurora */
+
+.aurora-introduction {
+  background:
+    linear-gradient(
+      140deg,
+      rgba(5, 45, 67, 0.96),
+      rgba(4, 37, 56, 0.96)
+    ) !important;
+}
+
+/* Remove fundos diferentes entre as seções */
+
+@media (max-width: 768px) {
+  body,
+  main,
+  .hero-section.hero-cosmic {
+    background: var(--site-blue) !important;
+  }
+}
+
